@@ -1,0 +1,1 @@
+import mongoose from 'mongoose'; mongoose.connect('mongodb+srv://makeonly4fun_db_user:Nxdu2Bm53pPq20lT@cluster0.phtk4ay.mongodb.net/?appName=Cluster0', {serverSelectionTimeoutMS: 5000}).then(() => {console.log('Connected'); process.exit(0)}).catch(err => { import('fs').then(fs => fs.writeFileSync('mongo_err.txt', err.stack)); process.exit(1)});
